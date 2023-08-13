@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Sam's Webpage</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    
+    <!-- <div class="banner"> -->
+        <div class="navbar">
+            <ul>
+                <li><a href = "#Skills">Skills</a></li>
+                <li><a href = "#Projects">Projects</a></li>
+                <li><a href = "#Contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class = "name">
+            <p>
+                Sam Chou
+            </p>
+            <div class = "imgContainer">
+                <img src = "Sam_photo.jfif", style="width:6em; height:6.5em" />
+            </div>
+            
+        </div>
+        <div class = "header">
+            <p>About Me</p>
+        </div>
+        <div class = "section1">      
+            <div class="swiper">
+                    
+                <div class="swiper-wrapper">
+                  
+                  <div class="swiper-slide"><img src = "about_me_student.jpg"></div>
+                  <div class="swiper-slide"><img src = "about_me_positions.jpg"></div>
+                  <div class="swiper-slide"><img src = "about_me_hobbies.jpg"></div>
+                  <div class="swiper-slide"><img src = "about_me_quick_facts.jpg"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+    
+              </div>
+        </div>
+        <div class = "section2">
+            <div class = "header">
+                <p id="Skills">Skills</p>
+            </div> 
+            <div class = logos>
+                <div class = "logo hidden">
+                    <img src = "python.png", style="width:15em; height:15em">
+                </div>
+                <div class = "logo hidden">
+                    <img src = "javascript.png", style="width:15em; height:15em">
+                </div>
+                <div class = "logo hidden">
+                    <img src = "html.png", style="width:15em; height:15em">
+                </div>
+                <div class = "logo hidden">
+                    <img src = "css.png", style="width:15em; height:15em">
+                </div>
+                <div class = "logo hidden">
+                    <img src = "C.png", style="width:15em; height:15em">
+                </div>
+            </div>
+        </div>
+        <div class = "section3">
+            <div class = "header">
+                <p id="Projects">Projects</p>
+            </div> 
+        </div>
+        <div class = "section4">
+            <div class = "header">
+                <p id="Contact">Contact</p>
+                
+            </div> 
+            <ul>
+                <li>Phone Number: 425-365-7872</li>
+                <li><a href = "sam@thechous.com" target = "_blank"> <img src = "email.png", style="width:6em; height:6.5em"></a></li>
+                <li><a href = "https://www.linkedin.com/in/sam-chou-40b3421a7/" target = "_blank"> <img src = "linkedin.png", style="width:4.5em; height:4.5em"></a></li>
+                <li><a href = "https://www.instagram.com/sam_ch0u/" target = "_blank"> <img src = "instagram.png", style="width:4.5em; height:4.5em"></a></li>
+            </ul>
+
+        </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+      
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+      });</script>
+    <script defer src="app.js"></script>
+</body>
+</html>
